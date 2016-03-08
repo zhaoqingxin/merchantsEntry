@@ -1,0 +1,52 @@
+/* basic */
+body{
+    font-family: Microsoft YaHei;
+    font-size:12px;
+    margin:0;
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,
+pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{ margin:0; padding:0; line-height: 100%}
+address,caption,cite,code,dfn,em,th,var,optgroup{ font-style:inherit; font-weight:inherit;}
+i,em,strong{ font-style:normal;}
+/* h1-h6 */
+h1,h2,h3,h4,h5,h6{
+    margin:0;
+    font-weight:normal;
+    font-size:12px;
+    line-height: 100%;
+}
+p{
+    margin:0;
+    font-size:12px;
+    line-height: 100%;
+}
+i,em{
+    font-style:normal;
+}
+b,strong{
+    font-weight:normal;
+}
+/* table */
+table{ border-collapse:collapse; border-spacing:0;}
+caption,th{ text-align:left;}
+/* form */
+legend{ font-weight:bold; font-size:1.2em; color:#404040; background:#fff;}
+fieldset{ border:none; padding:1.4em; margin:0 0 1.5em 0; border:1px solid #ccc;}
+input, button, textarea, select, optgroup, option{font-family: Microsoft YaHei; font-size:inherit;font-style:inherit;font-weight:inherit;}
+input, button, textarea, select{*font-size:100%;}
+input, select{padding-left:5px; vertical-align:middle;}
+select{ background:#fff;}
+textarea{resize: none;}
+input{ outline:none;}
+/* other */
+img{ vertical-align:middle; -ms-interpolation-mode:bicubic; /*IE7私有属性,解决缩放失真*/}
+a img{ border:0 none;}
+ol,ul,li{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+/* a */
+a{ color:#000; text-decoration:none; cursor:pointer;}
+a, a:active, a:focus{ outline:none;}
+a:hover{ text-decoration:none;}

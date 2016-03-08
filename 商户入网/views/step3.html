@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>商户入网</title>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/bootstrap-datepicker.css"/>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/layout.css"/>
+    <link rel="stylesheet" href="../css/step.css"/>
+</head>
+<body>
+<div class="MerchantsEntry_user_container">
+    <div class="MerchantsEntry_user_bar clearfix">
+        <div class="MerchantsEntry_user float-right">
+            <a href="javascript:;" class="float-left border-right">你好：test</a>
+            <a href="javascript:;" class="float-left border-right">帮助中心</a>
+            <a href="javascript:;" class="float-left">安全中心</a>
+        </div>
+    </div>
+</div>
+<div class="MerchantsEntry_logo_container">
+    <div class="MerchantsEntry_logo_bar"></div>
+</div>
+<div class="MerchantsEntry_content_container">
+    <div class="MerchantsEntry_content">
+        <div class="MerchantsEntry_progress_container">
+            <div class="MerchantsEntry_progress_bar clearfix">
+                <i class="dot-orange float-left">1</i>
+                <i class="progressbar-orange float-left"></i>
+                <i class="dot-orange float-left">2</i>
+                <i class="progressbar-orange float-left"></i>
+                <i class="dot-orange float-left">3</i>
+                <i class="progressbar-orange float-left"></i>
+                <i class="dot-gray float-left">4</i>
+            </div>
+            <div class="MerchantsEntry_progress_step clearfix">
+                <p class="float-left text-color-orange">公司基本信息</p>
+                <p class="float-left text-color-orange">公司资质</p>
+                <p class="float-left text-color-orange">业务合作信息</p>
+                <p class="float-left">公司结算信息</p>
+            </div>
+        </div>
+        <form action="step4.html" method="get" class="MerchantsEntry_form">
+            <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                <div class="MerchantsEntry_form_left">
+                    <label>合作网址：</label>
+                    <i class="star">*</i>
+                </div>
+                <div class="MerchantsEntry_form_right">
+                    <div class="MerchantsEntry_form_control apposition clearfix">
+                        <select id="operateWebSite-label" class="operateWebSite">
+                            <option value="例如：http://www.jd.com/">
+                                合作网址
+                            </option>
+                            <option value="例如：手机京东">
+                                手机客户端
+                            </option>
+                        </select>
+                        <input type="text" id="operateWebSite" name="operateWebSite" class="alone-input required" placeholder="例如：http://www.jd.com/"/>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                <div class="MerchantsEntry_form_left">
+                    <label for="operateIp">公司接入服务器IP：</label>
+                    <i class="star">*</i>
+                </div>
+                <div class="MerchantsEntry_form_right MerchantsEntry_ip_box">
+                    <div class="MerchantsEntry_form_control margin-bottom-10 clearfix">
+                        <input type="text" class="alone-input float-left" placeholder="可填多项"/>
+                        <span class="unit addItems" id="addItems"></span>
+                    </div>
+                    <div class="form-hide">
+                        <input type="text" name="operateIp" value="" id="operateIp" class="required"/>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                <div class="MerchantsEntry_form_left">
+                    <label for="businessContent">公司网站经营内容：</label>
+                    <i class="star">*</i>
+                </div>
+                <div class="MerchantsEntry_form_right">
+                    <div class="MerchantsEntry_form_control">
+                        <input type="text" id="businessContent" name="businessContent" class="input-long required"/>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                <div class="MerchantsEntry_form_left">
+                    <label for="operateMemo">公司与我司合作的支付服务内容：</label>
+                    <i class="star">*</i>
+                </div>
+                <div class="MerchantsEntry_form_right">
+                    <div class="MerchantsEntry_form_control">
+                        <input type="text" id="operateMemo" name="operateMemo" class="input-long required"/>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                <div class="MerchantsEntry_form_left">
+                    <label>合作产品：</label>
+                    <i class="star">*</i>
+                </div>
+                <div class="MerchantsEntry_form_right">
+                    <div class="MerchantsEntry_form_control width-440 clearfix coopProduct-item">
+                        <div class="float-left coopProduct">
+                            <input type="checkbox" value="value1" id="id1" name="value1"/>
+                            <label for="id1">value1</label>
+                        </div>
+                        <div class="float-left coopProduct">
+                            <input type="checkbox" value="value2" id="id2" name="value2"/>
+                            <label for="id2">value2</label>
+                        </div>
+                        <div class="float-left coopProduct">
+                            <input type="checkbox" value="value3" id="id3" name="value3"/>
+                            <label for="id3">value3</label>
+                        </div>
+                        <div class="float-left coopProduct">
+                            <input type="checkbox" value="value4" id="id4" name="value4"/>
+                            <label for="id4">value4</label>
+                        </div>
+                        <div class="float-left coopProduct">
+                            <input type="checkbox" value="value5" id="id5" name="value5"/>
+                            <label for="id5">value5</label>
+                        </div>
+                        <div class="float-left coopProduct">
+                            <input type="checkbox" value="value6" id="id6" name="value6"/>
+                            <label for="id6">value6</label>
+                        </div>
+                        <div class="float-left coopProduct">
+                            <input type="checkbox" value="value7" id="id7" name="value7"/>
+                            <label for="id7">value7</label>
+                        </div>
+                        <div class="float-left coopProduct">
+                            <input type="checkbox" value="value8" id="id8" name="value8"/>
+                            <label for="id8">value8</label>
+                        </div>
+                        <div class="float-left coopProduct">
+                            <input type="checkbox" value="value9" id="id9" name="value9"/>
+                            <label for="id9">value9</label>
+                        </div>
+                        <div class="float-left coopProduct">
+                            <input type="checkbox" value="value10" id="id10" name="value10"/>
+                            <label for="id10">value10</label>
+                        </div>
+                    </div>
+                    <div class="form-hide">
+                        <input type="text" name="coopProduct" id="coopProduct" class="required"/>
+                    </div>
+                </div>
+            </div>
+            <div class="fold margin-bottom-20">
+                合作信息
+            </div>
+            <div class="margin-bottom-50">
+                <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                    <div class="MerchantsEntry_form_left">
+                        <label for="contractNo" class="form-left">合同编号：</label>
+                    </div>
+                    <div class="MerchantsEntry_form_right">
+                        <div class="MerchantsEntry_form_control">
+                            <input type="text" id="contractNo" name="contractNo" class="alone-input"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                    <div class="MerchantsEntry_form_left">
+                        <label for="contractTime" class="form-left">合同签订日：</label>
+                    </div>
+                    <div class="MerchantsEntry_form_right">
+                        <div class="MerchantsEntry_form_control">
+                            <input type="text" id="contractTime" name="contractTime" class="alone-input datepicker"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                    <div class="MerchantsEntry_form_left">
+                        <label for="contractExpireTime" class="form-left">合同到期日：</label>
+                    </div>
+                    <div class="MerchantsEntry_form_right">
+                        <div class="MerchantsEntry_form_control">
+                            <input type="text" id="contractExpireTime" name="contractExpireTime" class="alone-input datepicker"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                    <div class="MerchantsEntry_form_left">
+                        <label for="businessAgreementPath">业务协议扫描照片：</label>
+                    </div>
+                    <div class="MerchantsEntry_form_right">
+                        <div class="MerchantsEntry_form_control">
+                            <input type="file" id="businessAgreementPath" name="businessAgreementPath" class="alone-input"/>
+                        </div>
+                        <span class="illustrate">只能上传2MB以内，jpg、jpeg、gif、bmp、png等格式的图片</span>
+                    </div>
+                </div>
+                <div class="clearfix MerchantsEntry_form_item">
+                    <div class="MerchantsEntry_form_left">
+                        <label for="businessAgreementPath">代理商编码：</label>
+                    </div>
+                    <div class="MerchantsEntry_form_right">
+                        <div class="MerchantsEntry_form_control">
+                            <input type="text" id="agentCode" name="agentCode" class="alone-input"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-hide">
+                    <input type="text" name="targetPage" value="TJ4" id="targetPage" class="required"/>
+                    <input type="submit" id="submit"/>
+            </div>
+            <div  class="clearfix submit-btn">
+                <input type="button" value="暂存" id="current-Page"/>
+                <input type="button" value="上一步" id="prev-page" />
+                <input type="button" value="下一步" id="next-page"/>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/checkout.js"></script>
+<script src="../js/merchantsEntryApp.js"></script>
+<script src="../js/bootstrap-datepicker.js"></script>
+<script src="../js/pages/step3.js"></script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>商户入网</title>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/layout.css"/>
+    <link rel="stylesheet" href="../css/step.css"/>
+</head>
+<body>
+<div class="MerchantsEntry_user_container">
+    <div class="MerchantsEntry_user_bar clearfix">
+        <div class="MerchantsEntry_user float-right">
+            <a href="javascript:;" class="float-left border-right">你好：test</a>
+            <a href="javascript:;" class="float-left border-right">帮助中心</a>
+            <a href="javascript:;" class="float-left">安全中心</a>
+        </div>
+    </div>
+</div>
+<div class="MerchantsEntry_logo_container">
+    <div class="MerchantsEntry_logo_bar"></div>
+</div>
+<div class="MerchantsEntry_content_container">
+    <div class="MerchantsEntry_content">
+        <div class="MerchantsEntry_progress_container">
+            <div class="MerchantsEntry_progress_bar clearfix">
+                <i class="dot-orange float-left">1</i>
+                <i class="progressbar-orange float-left"></i>
+                <i class="dot-orange float-left">2</i>
+                <i class="progressbar-orange float-left"></i>
+                <i class="dot-orange float-left">3</i>
+                <i class="progressbar-orange float-left"></i>
+                <i class="dot-orange float-left">4</i>
+            </div>
+            <div class="MerchantsEntry_progress_step clearfix">
+                <p class="float-left text-color-orange">公司基本信息</p>
+                <p class="float-left text-color-orange">公司资质</p>
+                <p class="float-left text-color-orange">业务合作信息</p>
+                <p class="float-left text-color-orange">公司结算信息</p>
+            </div>
+        </div>
+        <form action="step1.html" method="get" class="MerchantsEntry_form">
+            <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                <div class="MerchantsEntry_form_left">
+                    <label for="setInterval">结算周期T＋n：</label>
+                    <i class="star">*</i>
+                </div>
+                <div class="MerchantsEntry_form_right">
+                    <div class="MerchantsEntry_form_control apposition clearfix">
+                        <select id="setInterval" class="settlementInterval float-left">
+                            <option value="T+0">
+                                T+0
+                            </option>
+                            <option value="T+1" selected="selected">
+                                T+1
+                            </option>
+                            <option value="T+2">
+                                T+2
+                            </option>
+                            <option value="其他">
+                                其他
+                            </option>
+                        </select>
+                        <input type="text" class="alone-input float-left form-hide" id="setIntervalInput"/>
+                    </div>
+                    <div class="form-hide">
+                        <input type="text" name="settlementInterval" id="settlementInterval" class="required" value="T+1"/>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                <div class="MerchantsEntry_form_left">
+                    <label>是否需要非工作日结算：</label>
+                    <i class="star">*</i>
+                </div>
+                <div class="MerchantsEntry_form_right isWorkDaySettlement_box">
+                    <div class="MerchantsEntry_form_control clearfix">
+                        <input type="radio" id="Y" name="isWorkDay" value="Y" estimate="Y" class="float-left"/>
+                        <label for="Y" class="float-left isWorkDay float-left">是</label>
+                        <input type="radio" id="N" name="isWorkDay" value="N" estimate="N" class="float-left"/>
+                        <label for="N" class="float-left isWorkDay float-left">否</label>
+                    </div>
+
+                    <div class="form-hide">
+                        <input type="text" name="isWorkDaySettlement" id="isWorkDaySettlement" class="required"/>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                <div class="MerchantsEntry_form_left">
+                    <label for="feeSettlementMethod">手续费结算方式：</label>
+                    <i class="star">*</i>
+                </div>
+                <div class="MerchantsEntry_form_right">
+                    <div class="MerchantsEntry_form_control">
+                        <select name="feeSettlementMethod" id="feeSettlementMethod" class="operateWebSite float-left">
+                            <option value="坐扣">
+                                坐扣
+                            </option>
+                            <option value="月付">
+                                月付
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="fold margin-bottom-20">
+                收款行信息
+            </div>
+            <div class="margin-bottom-50">
+                <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                    <div class="MerchantsEntry_form_left">
+                        <label for="bankCode">开户银行：</label>
+                        <i class="star">*</i>
+                    </div>
+                    <div class="MerchantsEntry_form_right">
+                        <div class="MerchantsEntry_form_control">
+                            <input type="text" id="bankCode" name="bankCode" class="alone-input required"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                    <div class="MerchantsEntry_form_left">
+                        <label for="bankProv">开户行所在地址：</label>
+                        <i class="star">*</i>
+                    </div>
+                    <div class="MerchantsEntry_form_right">
+                        <div class="MerchantsEntry_form_control">
+                            <input type="text" id="bankProv" name="bankProv" placeholder="省" class="required"/>
+                            <input type="text" id="bankCity" name="bankCity" placeholder="市" class="required"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                    <div class="MerchantsEntry_form_left">
+                        <label for="bankName">开户行名称：</label>
+                        <i class="star">*</i>
+                    </div>
+                    <div class="MerchantsEntry_form_right">
+                        <div class="MerchantsEntry_form_control">
+                            <input type="text" id="bankName" name="bankName" class="alone-input required"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                    <div class="MerchantsEntry_form_left">
+                        <label for="bankNo">开户行行号：</label>
+                        <i class="star">*</i>
+                    </div>
+                    <div class="MerchantsEntry_form_right">
+                        <div class="MerchantsEntry_form_control">
+                            <input type="text" id="bankNo" name="bankNo" class="alone-input required"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                    <div class="MerchantsEntry_form_left">
+                        <label for="accountName">户名：</label>
+                        <i class="star">*</i>
+                    </div>
+                    <div class="MerchantsEntry_form_right">
+                        <div class="MerchantsEntry_form_control">
+                            <input type="text" id="accountName" name="accountName" class="alone-input required"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                    <div class="MerchantsEntry_form_left">
+                        <label for="bankAccountNo">账号：</label>
+                        <i class="star">*</i>
+                    </div>
+                    <div class="MerchantsEntry_form_right">
+                        <div class="MerchantsEntry_form_control">
+                            <input type="text" id="bankAccountNo" name="bankAccountNo" class="alone-input required"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix MerchantsEntry_form_item">
+                    <div class="MerchantsEntry_form_left">
+                        <label for="receiveBankPath">开户许可证／银行卡扫描照片：</label>
+                        <i class="star">*</i>
+                    </div>
+                    <div class="MerchantsEntry_form_right">
+                        <div class="MerchantsEntry_form_control">
+                            <input type="file" id="receiveBankPath" name="receiveBankPath" class="alone-input required"/>
+                        </div>
+                        <span class="illustrate">只能上传2MB以内，jpg、jpeg、gif、bmp、png等格式的图片</span>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix margin-bottom-50 MerchantsEntry_form_item">
+                <div class="MerchantsEntry_form_left">
+                    <label for="memo" class="form-left">备注：</label>
+                </div>
+                <div class="MerchantsEntry_form_right">
+                    <div class="MerchantsEntry_form_control merchantsentry_form_text">
+                        <textarea id="memo" name="memo" cols="60" rows="6"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="form-hide">
+                    <input type="text" name="targetPage" value="TJ5" id="targetPage" class="required"/>
+                    <input type="submit" id="submit"/>
+            </div>
+            <div  class="clearfix submit-btn">
+                <input type="button" value="暂存" id="current-Page"/>
+                <input type="button" value="上一步" id="prev-page"/>
+                <input type="button" value="提交" id="MerchantsEntry-submit"/>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="MerchantsEntry-mask screen-full-height MerchantsEntry-mask-hide">
+    <div class="MerchantsEntry-mask-bg screen-full-height"></div>
+    <div class="MerchantsEntry-mask-content">
+        <p>
+            确定提交审核？确定后不能更改。
+        </p>
+        <div class="MerchantsEntry-mask-buttonBox">
+            <input type="button" value="取消" id="cancel-submit"/>
+            <input type="button" value="确定" class="MerchantsEntry-submit-sure" id="MerchantsEntry-submit-sure"/>
+        </div>
+        <a class="MerchantsEntry-fork" href="javascript:;"></a>
+    </div>
+</div>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/checkout.js"></script>
+<script src="../js/merchantsEntryApp.js"></script>
+<script src="../js/pages/step4.js"></script>
+</body>
+</html>

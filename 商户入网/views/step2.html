@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>商户入网</title>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/bootstrap-datepicker.css"/>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/layout.css"/>
+    <link rel="stylesheet" href="../css/step.css"/>
+</head>
+<body>
+<div class="MerchantsEntry_user_container">
+    <div class="MerchantsEntry_user_bar clearfix">
+        <div class="MerchantsEntry_user float-right">
+            <a href="javascript:;" class="float-left border-right">你好：test</a>
+            <a href="javascript:;" class="float-left border-right">帮助中心</a>
+            <a href="javascript:;" class="float-left">安全中心</a>
+        </div>
+    </div>
+</div>
+<div class="MerchantsEntry_logo_container">
+    <div class="MerchantsEntry_logo_bar"></div>
+</div>
+<div class="MerchantsEntry_content_container">
+    <div class="MerchantsEntry_content">
+        <div class="MerchantsEntry_progress_container">
+            <div class="MerchantsEntry_progress_bar clearfix">
+                <i class="dot-orange float-left">1</i>
+                <i class="progressbar-orange float-left"></i>
+                <i class="dot-orange float-left">2</i>
+                <i class="progressbar-orange float-left"></i>
+                <i class="dot-gray float-left">3</i>
+                <i class="progressbar-gray float-left"></i>
+                <i class="dot-gray float-left">4</i>
+            </div>
+            <div class="MerchantsEntry_progress_step clearfix">
+                <p class="float-left text-color-orange">公司基本信息</p>
+                <p class="float-left text-color-orange">公司资质</p>
+                <p class="float-left">业务合作信息</p>
+                <p class="float-left">公司结算信息</p>
+            </div>
+        </div>
+        <form action="step3.html" method="get" class="MerchantsEntry_form">
+            <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                <div class="MerchantsEntry_form_left">
+                    <label for="companyRegister">注册资本：</label>
+                    <i class="star">*</i>
+                </div>
+                <div class="MerchantsEntry_form_right">
+                    <div class="MerchantsEntry_form_control">
+                        <input type="text" id="companyRegister" name="companyRegister" class="alone-input required" placeholder="需与营业执照一致" validate="decmal1"/>
+                        <span class="unit">万</span>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                <div class="MerchantsEntry_form_left">
+                    <label for="managementRange">经营范围：</label>
+                    <i class="star">*</i>
+                </div>
+                <div class="MerchantsEntry_form_right">
+                    <div class="MerchantsEntry_form_control">
+                        <input type="text" id="managementRange" name="managementRange" class="input-long required" placeholder="需与营业执照一致"/>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                <div class="MerchantsEntry_form_left">
+                    <label for="companyWorkAddress">公司地址：</label>
+                    <i class="star">*</i>
+                </div>
+                <div class="MerchantsEntry_form_right">
+                    <div class="MerchantsEntry_form_control MerchantsEntry_form_text">
+                        <textarea id="companyWorkAddress" name="companyWorkAddress" class="float-left required" placeholder="需与营业执照一致"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                <div class="MerchantsEntry_form_left">
+                    <label for="companyField">所属行业：</label>
+                    <i class="star">*</i>
+                </div>
+                <div class="MerchantsEntry_form_right">
+                    <div class="MerchantsEntry_form_control">
+                        <input type="text" id="companyField" name="companyField" class="alone-input required"/>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                <div class="MerchantsEntry_form_left">
+                    <label for="fieldStatus">行业地位：</label>
+                    <i class="star">*</i>
+                </div>
+                <div class="MerchantsEntry_form_right">
+                    <div class="MerchantsEntry_form_control">
+                        <input type="text" id="fieldStatus" name="fieldStatus" class="alone-input required"/>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                <div class="MerchantsEntry_form_half float-left margin-left-170">
+                    <div class="MerchantsEntry_form_left">
+                        <label for="employeeNum">员工人数：</label>
+                        <i class="star">*</i>
+                    </div>
+                    <div class="MerchantsEntry_form_right">
+                        <div class="MerchantsEntry_form_control">
+                            <input type="text" id="employeeNum" name="employeeNum" class="input-short required"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="MerchantsEntry_form_half float-left">
+                    <div class="MerchantsEntry_form_left">
+                        <label for="customerSize">客户规模：</label>
+                        <i class="star">*</i>
+                    </div>
+                    <div class="MerchantsEntry_form_right">
+                        <div class="MerchantsEntry_form_control">
+                            <input type="text" id="customerSize" name="customerSize" class="input-short required" placeholder="现有客户数量" validate="decmal1"/>
+                            <span class="unit">万</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix margin-bottom-50 MerchantsEntry_form_item">
+                <div class="MerchantsEntry_form_half float-left margin-left-170">
+                    <div class="MerchantsEntry_form_left">
+                        <label for="lastYearTradingVolume">上一年度交易额：</label>
+                        <i class="star">*</i>
+                    </div>
+                    <div class="MerchantsEntry_form_right">
+                        <div class="MerchantsEntry_form_control">
+                            <input type="text" id="lastYearTradingVolume" name="lastYearTradingVolume" class="input-short required" validate="decmal1"/>
+                            <span class=" unit">万</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="MerchantsEntry_form_half float-left">
+                    <div class="MerchantsEntry_form_left">
+                        <label for="forecastTradingVolume">预估交易额：</label>
+                        <i class="star">*</i>
+                    </div>
+                    <div class="MerchantsEntry_form_right">
+                        <div class="MerchantsEntry_form_control">
+                            <input type="text" id="forecastTradingVolume" name="forecastTradingVolume" class="input-short required" validate="decmal1"/>
+                            <span class=" unit">万</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fold margin-bottom-20">
+                ICP信息
+            </div>
+            <div class="margin-bottom-50">
+                <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                    <div class="MerchantsEntry_form_left">
+                        <label for="recordLicense">备案／许可证号：</label>
+                        <i class="star">*</i>
+                    </div>
+                    <div class="MerchantsEntry_form_right">
+                        <div class="MerchantsEntry_form_control">
+                            <input type="text" id="recordLicense" name="recordLicense" class="alone-input required"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix MerchantsEntry_form_item">
+                    <div class="MerchantsEntry_form_left">
+                        <label for="icpPath">ICP证扫描照片 :</label>
+                        <i class="star">*</i>
+                    </div>
+                    <div class="MerchantsEntry_form_right">
+                        <div class="MerchantsEntry_form_control">
+                            <input type="file" id="icpPath" name="icpPath" class="alone-input required"/>
+                        </div>
+                        <span class="illustrate">只能上传2MB以内，jpg、jpeg、gif、bmp、png等格式的图片</span>
+                    </div>
+                </div>
+            </div>
+            <div class="fold margin-bottom-20">
+                营业执照信息
+            </div>
+            <div class="margin-bottom-50">
+                <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                    <div class="MerchantsEntry_form_left">
+                        <label for="businessNo">营业执照编号：</label>
+                        <i class="star">*</i>
+                    </div>
+                    <div class="MerchantsEntry_form_right">
+                        <div class="MerchantsEntry_form_control">
+                            <input type="text" id="businessNo" name="businessNo" class="alone-input required"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                    <div class="MerchantsEntry_form_left">
+                        <label for="businessFromTime">营业期限：</label>
+                        <i class="star">*</i>
+                    </div>
+                    <div class="MerchantsEntry_form_right">
+                        <div class="MerchantsEntry_form_control">
+                            <input type="text" id="businessFromTime" name="businessFromTime" class="alone-input datepicker required"/>
+                            <span class="joint">至</span>
+                            <input type="text" id="businessEndTime" name="businessEndTime" class="alone-input datepicker required"/>
+                            <input type="checkbox" class="forever" id="businessEndTime-forever"/>
+                            <label class="forever-label" for="businessEndTime-forever">长期</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix MerchantsEntry_form_item">
+                    <div class="MerchantsEntry_form_left">
+                        <label for="licenseNoPath">营业执照扫描照片：</label>
+                        <i class="star">*</i>
+                    </div>
+                    <div class="MerchantsEntry_form_right">
+                        <div class="MerchantsEntry_form_control">
+                            <input type="file" id="licenseNoPath" name="licenseNoPath" class="alone-input required"/>
+                        </div>
+                        <span class="illustrate">只能上传2MB以内，jpg、jpeg、gif、bmp、png等格式的图片</span>
+                    </div>
+                </div>
+            </div>
+            <div class="fold margin-bottom-20">
+                法人身份证明信息
+            </div>
+            <div class="margin-bottom-50">
+                <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                    <div class="MerchantsEntry_form_left">
+                        <label for="name">法人姓名：</label>
+                        <i class="star">*</i>
+                    </div>
+                    <div class="MerchantsEntry_form_right">
+                        <div class="MerchantsEntry_form_control">
+                            <input type="text" name="name" id="name" class="alone-input required"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                    <div class="MerchantsEntry_form_left">
+                        <label for="idCard">法人身份证号：</label>
+                        <i class="star">*</i>
+                    </div>
+                    <div class="MerchantsEntry_form_right">
+                        <div class="MerchantsEntry_form_control">
+                            <input type="text" name="idCard" id="idCard" class="alone-input required" validate="idcard"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                    <div class="MerchantsEntry_form_left">
+                        <label for="legalPersonValidFrom">有效期限：</label>
+                        <i class="star">*</i>
+                    </div>
+                    <div class="MerchantsEntry_form_right">
+                        <div class="MerchantsEntry_form_control">
+                            <input type="text" id="legalPersonValidFrom" name="legalPersonValidFrom" class="alone-input datepicker required"/>
+                            <span class="joint">至</span>
+                            <input type="text" id="legalPersonValidEnd" name="legalPersonValidEnd" class="alone-input datepicker required"/>
+                            <input type="checkbox" class="forever" id="legalPersonValidEnd-forever"/><label class="forever-label" for="legalPersonValidEnd-forever">长期</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix MerchantsEntry_form_item margin-bottom-30">
+                    <div class="MerchantsEntry_form_left">
+                        <label for="idCardFront">身份证正面扫描照片：</label>
+                        <i class="star">*</i>
+                    </div>
+                    <div class="MerchantsEntry_form_right">
+                        <div class="MerchantsEntry_form_control">
+                            <input type="file" id="idCardFront" name="idCardFront" class="alone-input required"/>
+                        </div>
+                        <span class="illustrate">只能上传2MB以内，jpg、jpeg、gif、bmp、png等格式的图片</span>
+                    </div>
+                </div>
+                <div class="clearfix MerchantsEntry_form_item">
+                    <div class="MerchantsEntry_form_left">
+                        <label for="idCardBehind">身份证背面扫描照片：</label>
+                        <i class="star">*</i>
+                    </div>
+                    <div class="MerchantsEntry_form_right">
+                        <div class="MerchantsEntry_form_control">
+                            <input type="file" id="idCardBehind" name="idCardBehind" class="alone-input required"/>
+                        </div>
+                        <span class="illustrate">只能上传2MB以内，jpg、jpeg、gif、bmp、png等格式的图片</span>
+                    </div>
+                </div>
+            </div>
+            <div class="fold margin-bottom-20">
+                组织机构代码信息
+            </div>
+            <div class="margin-bottom-50">
+                <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                    <div class="MerchantsEntry_form_left">
+                        <label for="orgCode">组织结构代码证编号：</label>
+                    </div>
+                    <div class="MerchantsEntry_form_right">
+                        <div class="MerchantsEntry_form_control">
+                            <input type="text" id="orgCode" name="orgCode" class="alone-input"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                    <div class="MerchantsEntry_form_left">
+                        <label class="orgCodeValidFrom">有效期限：</label>
+                    </div>
+                    <div class="MerchantsEntry_form_right">
+                        <div class="MerchantsEntry_form_control">
+                            <input type="text" id="orgCodeValidFrom" name="orgCodeValidFrom" class="alone-input datepicker"/>
+                            <span class="joint">至</span>
+                            <input type="text" id="orgCodeValidEnd" name="orgCodeValidEnd" class="alone-input datepicker"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix MerchantsEntry_form_item">
+                    <div class="MerchantsEntry_form_left">
+                        <label for="orgCodePath">组织机构代码证扫描照片：</label>
+                    </div>
+                    <div class="MerchantsEntry_form_right">
+                        <div class="MerchantsEntry_form_control">
+                            <input type="file" id="orgCodePath" name="orgCodePath" class="alone-input"/>
+                        </div>
+                        <span class="illustrate margin-bottom-50">只能上传2MB以内，jpg、jpeg、gif、bmp、png等格式的图片</span>
+                    </div>
+                </div>
+            </div>
+            <div class="fold margin-bottom-20">
+                税务登记证信息
+            </div>
+            <div class="margin-bottom-50">
+                <div class="clearfix margin-bottom-30 MerchantsEntry_form_item">
+                    <div class="MerchantsEntry_form_left">
+                        <label for="taxNo">税务登记证编号：</label>
+                    </div>
+                    <div class="MerchantsEntry_form_right">
+                        <div class="MerchantsEntry_form_control">
+                            <input type="text" id="taxNo" name="taxNo" class="alone-input"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix MerchantsEntry_form_item">
+                    <div class="MerchantsEntry_form_left">
+                        <label for="taxPath">税务登记证扫描照片 :</label>
+                    </div>
+                    <div class="MerchantsEntry_form_right">
+                        <div class="MerchantsEntry_form_control">
+                            <input type="file" id="taxPath" name="taxPath" class="alone-input"/>
+                        </div>
+                        <span class="illustrate">完税证明扫描照片,只能上传2MB以内，jpg、jpeg、gif、bmp、png等格式的图片</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-hide">
+                <div>
+                    <input type="text" name="targetPage" value="TJ3" id="targetPage" class="required"/>
+                    <input type="submit" id="submit"/>
+                </div>
+            </div>
+            <div  class="clearfix submit-btn">
+                <input type="button" value="暂存" id="current-Page"/>
+                <input type="button" value="上一步" id="prev-page" />
+                <input type="button" value="下一步" id="next-page"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/checkout.js"></script>
+<script src="../js/merchantsEntryApp.js"></script>
+<script src="../js/bootstrap-datepicker.js"></script>
+<script src="../js/pages/step2.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+.region select{
+    width: 100px;
+}
+.region input{
+    margin-left: 10px;
+}
+/*联系人布局*/
+.MerchantsEntry_form .column{
+    width: 580px;
+    height: 34px;
+    line-height: 34px;
+    padding-left: 140px;
+    padding-bottom: 0;
+    margin-left: 180px;
+    margin-bottom: 10px;
+    background: #f1f0f0;
+}
+.MerchantsEntry_form .column span{
+    text-align: center;
+    float: left;
+    margin-right: 10px;
+    width: 112px;
+}
+.MerchantsEntry_form .column .mail{
+    width: 160px;
+}
+.MerchantsEntry_form .ContactName .MerchantsEntry_form_right .mail{
+    width: 140px;
+}
+.MerchantsEntry_form .ContactName .MerchantsEntry_form_right input{
+    margin-right: 10px;
+    width: 100px;
+}
+
+
+/*第二页*/
+.unit{
+    margin-left: 6px;
+}
+.MerchantsEntry_form_half{
+    width: 320px;
+}
+.MerchantsEntry_form_half .MerchantsEntry_form_half{
+    width: 498px;
+}
+.MerchantsEntry_form_half .MerchantsEntry_form_left{
+    float: left;
+    width: 130px;
+}
+.MerchantsEntry_form_half .MerchantsEntry_form_right{
+    float: left;
+    width: 170px;
+    margin-left: 10px;
+}
+.MerchantsEntry_form .forever{
+    margin-left: 16px;
+}
+.MerchantsEntry_form .forever-label{
+    display: inline-block;
+    padding-left: 2px;
+}
+
+/*第三页*/
+.apposition select{
+    width: 160px;
+}
+.apposition input{
+    margin-left: 10px;
+}
+.addItems{
+    float: left;
+    width: 20px;
+    height: 30px;
+    background: url("../images/add_items.jpg") no-repeat center center;
+}
+
+.coopProduct label{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 6px;
+    padding-right: 20px;
+}
+.coopProduct input{
+    float: left;
+}
+
+/*第四页*/
+.MerchantsEntry_form .isWorkDay{
+    height: 30px;
+    line-height: 30px;
+    padding-left: 8px;
+    margin-right: 30px;
+}
+
+.MerchantsEntry-mask{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.MerchantsEntry-mask-bg{
+    background: #000;
+    filter:alpha(opacity=50);
+    opacity:0.5;
+    width: 100%;
+}
+.screen-full-height{
+    height: 1000px;
+}
+.MerchantsEntry-mask-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -210px;
+    margin-top: -90px;
+    background: #ffffff;
+    z-index: 1000;
+    width: 420px;
+    height: 180px;
+}
+.MerchantsEntry-mask-content p{
+    padding-top: 50px;
+    padding-bottom: 40px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+.MerchantsEntry-mask-buttonBox{
+    padding-left: 92px;
+}
+.MerchantsEntry-mask-buttonBox input{
+    width: 108px;
+    height: 40px;
+    margin-right: 12px;
+    background: #f4f3f3;
+    border: 1px solid #e4e4e4;
+    outline: none;
+}
+.MerchantsEntry-mask-buttonBox .MerchantsEntry-submit-sure{
+    background: #f37022;
+    border: 1px solid #f37022;
+}
+.MerchantsEntry-mask-hide{
+    display: none;
+}
+.MerchantsEntry-fork{
+    position: absolute;
+    left: 382px;
+    top: 10px;
+    width: 28px;
+    height: 28px;
+    background: url("../images/MerchantsEntry_fork.jpg") no-repeat 0 0;
+}

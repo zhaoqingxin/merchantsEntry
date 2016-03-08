@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>商户入网信息查询</title>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/demand.css"/>
+</head>
+<body>
+<div class="MerchantsEntry_user_container">
+    <div class="MerchantsEntry_user_bar clearfix">
+        <div class="MerchantsEntry_user float-right">
+            <a href="javascript:;" class="float-left border-right">你好：test</a>
+            <a href="javascript:;" class="float-left border-right">帮助中心</a>
+            <a href="javascript:;" class="float-left">安全中心</a>
+        </div>
+    </div>
+</div>
+<div class="MerchantsEntry_logo_container">
+    <div class="MerchantsEntry_logo_bar"></div>
+</div>
+<div class="MerchantsEntry_content_container">
+    <div class="MerchantsEntry_content">
+        <div class="MerchantsEntry_demand_nav clearfix">
+            <span href="javascript:;" id="basicInformation" class="active">公司基本信息</span>
+            <span href="javascript:;" id="companyQualification">公司资质</span>
+            <span href="javascript:;" id="businessInformation">业务合作信息</span>
+            <span href="javascript:;" id="financialInformation">公司结算信息</span>
+        </div>
+        <ul class="MerchantsEntryInformation">
+            <li class="basicInformation show">
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            公司名称：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            companyName
+                        </span>
+                    </div>
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                        公司座机：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            companyTel
+                        </span>
+                    </div>
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <span class="MerchantsEntryInformation-key">
+                        联系地址：
+                    </span>
+                    <span class="MerchantsEntryInformation-value">
+                        <!--这个地址将省市区和详细地址拼接-->
+                        companyConnectAddress
+                        的撒旦撒范德萨分，啊的沙发沙发沙发，的撒发生飞洒发生飞洒的撒旦撒范德萨分，啊的沙发沙发沙发，的撒发生飞洒发生飞洒的撒旦撒范德萨分，啊的沙发沙发沙发，的撒发生飞洒发生飞洒
+                    </span>
+                </div>
+
+                <div class="MerchantsEntryInformation-column">
+                    业务联系人
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            姓名：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            bizContactName
+                        </span>
+                    </div>
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            固定电话：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            bizContactTel
+                        </span>
+                    </div>
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            手机：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            bizContactMobile
+                        </span>
+                    </div>
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            电子邮箱：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            bizContactEmail
+                        </span>
+                    </div>
+                </div>
+
+                <div class="MerchantsEntryInformation-column">
+                    技术联系人
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            姓名：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            techContactName
+                        </span>
+                    </div>
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            固定电话：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            techContactTel
+                        </span>
+                    </div>
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            手机：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            techContactMobile
+                        </span>
+                    </div>
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            电子邮箱：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            techContactEmail
+                        </span>
+                    </div>
+                </div>
+
+                <div class="MerchantsEntryInformation-column">
+                    运维联系人
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            姓名：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            scmContactName
+                        </span>
+                    </div>
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            固定电话：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            scmContactTel
+                        </span>
+                    </div>
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            手机：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            scmContactMobile
+                        </span>
+                    </div>
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            电子邮箱：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            scmContactEmail
+                        </span>
+                    </div>
+                </div>
+
+                <div class="MerchantsEntryInformation-column">
+                    客服联系人
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            姓名：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            cusContactName
+                        </span>
+                    </div>
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            固定电话：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            cusContactTel
+                        </span>
+                    </div>
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            手机：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            cusContactMobile
+                        </span>
+                    </div>
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            电子邮箱：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            cusContactEmail
+                        </span>
+                    </div>
+                </div>
+
+                <div class="MerchantsEntryInformation-column">
+                    财务联系人
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            姓名：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            finContactName
+                        </span>
+                    </div>
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            固定电话：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            finContactTel
+                        </span>
+                    </div>
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            手机：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            finContactMobile
+                        </span>
+                    </div>
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            电子邮箱：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            finContactEmail
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li class="companyQualification">
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            注册资本：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            companyRegister万
+                        </span>
+                    </div>
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            经营范围：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            managementRange
+                        </span>
+                    </div>
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <span class="MerchantsEntryInformation-key">
+                        公司地址：
+                    </span>
+                    <span class="MerchantsEntryInformation-value">
+                        companyWorkAddress
+                        的撒旦撒范德萨分，啊的沙发沙发沙发，的撒发生飞洒发生飞洒的撒旦撒范德萨分，啊的沙发沙发沙发，的撒发生飞洒发生飞洒的撒旦撒范德萨分，啊的沙发沙发沙发，的撒发生飞洒发生飞洒
+                    </span>
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            所属行业：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            companyField
+                        </span>
+                    </div>
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            行业地位：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            fieldStatus
+                        </span>
+                    </div>
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            员工人数：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            employeeNum
+                        </span>
+                    </div>
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            客户规模：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            customerSize万
+                        </span>
+                    </div>
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            上一年度交易额：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            lastYearTradingVolume万
+                        </span>
+                    </div>
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            预估交易额：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            forecastTradingVolume万
+                        </span>
+                    </div>
+                </div>
+                <div class="MerchantsEntryInformation-column">
+                    ICP信息
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            备案／许可证号：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            recordLicense
+                        </span>
+                    </div>
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <span class="MerchantsEntryInformation-key">
+                        ICP证扫描照片 :
+                    </span>
+                    <span class="MerchantsEntryInformation-value">
+                        <img src="icpPath" alt="ICP证扫描照片"/>
+                    </span>
+                </div>
+                <div class="MerchantsEntryInformation-column">
+                    营业执照信息
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            营业执照编号：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            businessNo
+                        </span>
+                    </div>
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            营业期限：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            businessFromTime至businessEndTime
+                        </span>
+                    </div>
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <span class="MerchantsEntryInformation-key">
+                        营业执照扫描照片：
+                    </span>
+                    <span class="MerchantsEntryInformation-value">
+                        <img src="licenseNoPath" alt="营业执照扫描照片"/>
+                    </span>
+                </div>
+                <div class="MerchantsEntryInformation-column">
+                    法人身份证明信息
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            法人姓名：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            name
+                        </span>
+                    </div>
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            法人身份证号：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            idCard
+                        </span>
+                    </div>
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            有效期限：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            legalPersonValidFrom至legalPersonValidEnd
+                        </span>
+                    </div>
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            身份证正面扫描照片：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            <img src="idCardFront" alt="身份证正面扫描照片"/>
+                        </span>
+                    </div>
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            身份证背面扫描照片：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            <img src="idCardBehind" alt="身份证背面扫描照片"/>
+                        </span>
+                    </div>
+                </div>
+                <div class="MerchantsEntryInformation-column">
+                    组织机构代码信息
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            组织结构代码证编号：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            orgCode
+                        </span>
+                    </div>
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            有效期限：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            orgCodeValidFrom至orgCodeValidEnd
+                        </span>
+                    </div>
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <span class="MerchantsEntryInformation-key">
+                        组织机构代码证扫描照片：
+                    </span>
+                    <span class="MerchantsEntryInformation-value">
+                        <img src="orgCodePath" alt="组织机构代码证扫描照片"/>
+                    </span>
+                </div>
+                <div class="MerchantsEntryInformation-column">
+                    税务登记证信息
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            税务登记证编号：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            taxNo
+                        </span>
+                    </div>
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <span class="MerchantsEntryInformation-key">
+                        税务登记证扫描照片：
+                    </span>
+                    <span class="MerchantsEntryInformation-value">
+                        <img src="taxPath" alt="税务登记证扫描照片"/>
+                    </span>
+                </div>
+            </li>
+            <li class="businessInformation">
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            合作网址：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            operateWebSite
+                        </span>
+                    </div>
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            公司接入服务器IP：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            operateIp
+                        </span>
+                    </div>
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            公司网站经营内容：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            businessContent
+                        </span>
+                    </div>
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            合作产品：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            coopProduct
+                        </span>
+                    </div>
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            公司与我司合作的支付服务内容：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            operateMemo
+                        </span>
+                    </div>
+                </div>
+                <div class="MerchantsEntryInformation-column">
+                    合作信息
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            合同编号：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            contractNo
+                        </span>
+                    </div>
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            合同有效期限：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            contractTime至contractExpireTime
+                        </span>
+                    </div>
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            代理商编码：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            agentCode
+                        </span>
+                    </div>
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                   <span class="MerchantsEntryInformation-key">
+                        业务协议扫描照片：
+                    </span>
+                    <span class="MerchantsEntryInformation-value">
+                        <img src="businessAgreementPath" alt="业务协议扫描照片"/>
+                    </span>
+                </div>
+            </li>
+            <li class="financialInformation">
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            结算周期：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            settlementInterval
+                        </span>
+                    </div>
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            是否需要非工作日结算：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            isWorkDaySettlement
+                        </span>
+                    </div>
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            手续费结算方式：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            feeSettlementMethod
+                        </span>
+                    </div>
+                </div>
+                <div class="MerchantsEntryInformation-column">
+                    收款行信息
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            开户银行：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            bankCode
+                        </span>
+                    </div>
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            开户行所在地址：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            bankProv拼接bankCity
+                        </span>
+                    </div>
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            开户行名称：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            bankName
+                        </span>
+                    </div>
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            开户行行号：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            bankNo
+                        </span>
+                    </div>
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            户名：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            accountName
+                        </span>
+                    </div>
+                    <div class="MerchantsEntryInformation-half">
+                        <span class="MerchantsEntryInformation-key">
+                            账号：
+                        </span>
+                        <span class="MerchantsEntryInformation-value">
+                            bankAccountNo
+                        </span>
+                    </div>
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                   <span class="MerchantsEntryInformation-key">
+                        开户许可证／银行卡扫描照片：
+                    </span>
+                    <span class="MerchantsEntryInformation-value">
+                        <img src="receiveBankPath" alt="开户许可证／银行卡扫描照片"/>
+                    </span>
+                </div>
+                <div class="MerchantsEntryInformation-item clearfix">
+                    <span class="MerchantsEntryInformation-key">
+                        备注：
+                    </span>
+                    <span class="MerchantsEntryInformation-value">
+                        memo
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/pages/demand.js"></script>
+</body>
+</html>

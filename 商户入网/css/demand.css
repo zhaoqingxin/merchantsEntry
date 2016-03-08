@@ -1,0 +1,239 @@
+/*自定义布局样式*/
+label{
+    height: 30px;
+    line-height: 30px;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.clearfix:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.clear{
+    zoom:1;
+}
+.position-relative{
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.position-absolute{
+    position: absolute;
+}
+.position-fixed{
+    position: fixed;
+}
+
+/*一些自定义样式*/
+.MerchantsEntry_form label,.MerchantsEntry_form input{
+    line-height: 30px;
+}
+.MerchantsEntry_form label{
+    text-align: right;
+    margin-bottom: 0;
+}
+.MerchantsEntry_form textarea{
+    width:400px;
+    height: 100px;
+    padding-left: 10px;
+    line-height: 30px;
+}
+.MerchantsEntry_form input{
+    margin-bottom: 0;
+}
+input[type="radio"], input[type="checkbox"]{
+    margin: 0;
+}
+.MerchantsEntry_form .form-hide{
+    display: none;
+}
+.MerchantsEntry_form .border-red{
+    border: 1px solid red;
+}
+.MerchantsEntry_tip{
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: red;
+}
+.margin-bottom-10{
+    margin-bottom: 10px;
+}
+.margin-bottom-20{
+    margin-bottom: 20px;
+}
+.margin-bottom-30{
+    margin-bottom: 30px;
+}
+.margin-bottom-50{
+    margin-bottom: 50px;
+}
+.margin-bottom-80{
+    margin-bottom: 80px;
+}
+.padding-left-20{
+    padding-left: 20px;
+}
+/*.prev-arrows{
+    background: url("../images/prev_arrows.jpg") no-repeat center center;
+}
+.next-arrows{
+    background: url("../images/next_arrows.jpg") no-repeat center center;
+}*/
+
+.alone-input{
+    width: 210px;
+}
+.input-short{
+    width: 120px;
+}
+.input-long{
+    width: 400px;
+}
+
+
+/*4个入网信息提交页面共用部分*/
+/*user bar*/
+.MerchantsEntry_user_container{
+    width: 100%;
+    height: 30px;
+    background: #3c464a;
+}
+.MerchantsEntry_user_bar {
+    width: 1000px;
+    height: 30px;
+    margin: 0 auto;
+    background: #3c464a;
+}
+.MerchantsEntry_user {
+    height: 14px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.MerchantsEntry_user a{
+    height: 14px;
+    color: #ffffff;
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 14px;
+    line-height: 14px;
+}
+.border-right{
+    border-right: 1px solid #ffffff;
+}
+/*user bar*/
+
+/*LOGO bar*/
+.MerchantsEntry_logo_container{
+    width: 100%;
+    height: 80px;
+    background: #f5f5f5;
+    border-bottom: 2px solid #e6e6e6;
+}
+.MerchantsEntry_logo_bar{
+    width: 1000px;
+    height: 80px;
+    margin: 0 auto;
+    background: url("../images/logo.png") no-repeat left center;
+}
+/*LOGO bar*/
+
+/*内容区的开始*/
+/*背景*/
+.MerchantsEntry_content_container{
+    width: 100%;
+    padding-top: 6px;
+    background: #f1f1f1;
+    padding-bottom: 40px;
+}
+
+/*中部白色区域*/
+.MerchantsEntry_content{
+    width: 1000px;
+    margin: 0 auto;
+    background: #f1f1f1;
+}
+
+/*tab切换选项导航*/
+.MerchantsEntry_demand_nav{
+    padding-top: 40px;
+}
+.MerchantsEntry_demand_nav span{
+    height: 60px;
+    width: 250px;
+    line-height: 60px;
+    font-size: 18px;
+    float: left;
+    text-align: center;
+}
+.MerchantsEntry_demand_nav span.active{
+    background: url("../images/progressbar-orange.jpg") repeat-x left top;
+    background-color: #ffffff;
+}
+.MerchantsEntryInformation{
+    width: 1000px;
+    background: #ffffff;
+}
+.MerchantsEntryInformation img{
+    width: 240px;
+    height: 140px;
+}
+.MerchantsEntryInformation li{
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 800px;
+    padding-bottom: 60px;
+}
+.MerchantsEntryInformation-item{
+    font-size: 14px;
+    width: 880px;
+    padding-bottom: 10px;
+}
+.MerchantsEntryInformation-item span{
+    line-height: 32px;
+    color: #545354;
+}
+.MerchantsEntryInformation-key{
+    width: 160px;
+    float: left;
+    text-align: right;
+    font-weight: bold;
+}
+.MerchantsEntryInformation-value{
+    padding-left: 20px;
+    width: 600px;
+    float: left;
+}
+.MerchantsEntryInformation-half{
+    width: 440px;
+    float: left;
+}
+.MerchantsEntryInformation-half .MerchantsEntryInformation-key{
+    width: 160px;
+}
+.MerchantsEntryInformation-half .MerchantsEntryInformation-value{
+    width: 260px;
+}
+
+.MerchantsEntryInformation-column{
+    width: 160px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    text-align: right;
+    font-weight: bold;
+    color: #545354;
+}
+.MerchantsEntryInformation li{
+    display: none;
+}
+.MerchantsEntryInformation .show{
+    display: block;
+}

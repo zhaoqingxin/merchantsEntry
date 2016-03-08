@@ -1,0 +1,14 @@
+1.第四页select用js设定初始值
+2,把是否需要工作日结算改一下，改成自定义属性Y和N（不支持value）
+
+第三页
+在拼字符串之前，先把placeholder清空
+暂存的时候也要拼一下字符串
+
+
+
+总体js
+placeholder的方法改一下，删掉this.value=''这一项
+在暂存和提交之前，先清空placeholder，之后重新运行placeholder方法
+css
+把提示变成块元素
